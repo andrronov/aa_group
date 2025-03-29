@@ -40,7 +40,7 @@
           </div>
         </div>
         <img
-          src="../public/images/about.png"
+          src="/images/about.png"
           alt="Product screenshot"
           class="pointer-events-none h-full object-cover bg-gray-500 rounded-xl shadow-xl ring-1 ring-gray-400/10 w-full md:-ml-4 lg:-ml-0"
         />

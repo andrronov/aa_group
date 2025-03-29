@@ -3,6 +3,7 @@ import AppNav from "./components/AppNav.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
 import Advantages from "./components/Advantages.vue";
+import RepairTypes from "./components/RepairTypes.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Advantages from "./components/Advantages.vue";
     <Hero />
     <About />
     <Advantages />
+    <RepairTypes />
   </div>
 </template>
 
