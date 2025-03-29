@@ -2,6 +2,7 @@
 import AppNav from "./components/AppNav.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
+import Advantages from "./components/Advantages.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import About from "./components/About.vue";
     <AppNav />
     <Hero />
     <About />
+    <Advantages />
   </div>
 </template>
 
