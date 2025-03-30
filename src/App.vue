@@ -4,6 +4,7 @@ import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
 import Advantages from "./components/Advantages.vue";
 import RepairTypes from "./components/RepairTypes.vue";
+import RepairSteps from "./components/RepairSteps.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import RepairTypes from "./components/RepairTypes.vue";
     <About />
     <Advantages />
     <RepairTypes />
+    <RepairSteps />
   </div>
 </template>
 

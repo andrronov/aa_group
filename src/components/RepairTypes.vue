@@ -37,11 +37,11 @@ const selectedType = shallowRef(types[0]);
   <section class="w-full bg-white py-20">
     <div class="container mx-auto w-full flex flex-col items-center">
       <h2 class="text-2xl sm:text-3xl text-black font-bold">Виды ремонта</h2>
-      <ul class="grid grid-cols-5 grid-rows-1 w-full text-center my-12">
+      <ul class="flex items-center justify-between gap-2 w-full overflow-x-auto text-center my-12">
         <li
           v-for="type in types"
           :key="type"
-          class="text-lg cursor-pointer place-self-center max-w-max px-2.5 py-2"
+          class="text-lg cursor-pointer place-self-center min-w-48 max-w-max px-2.5 py-3.5 sm:py-2"
           :class="{
             'text-white bg-primary': selectedType.label === type.label,
           }"
@@ -50,21 +50,21 @@ const selectedType = shallowRef(types[0]);
           {{ type.label }}
         </li>
       </ul>
-      <div class="flex flex-col sm:flex-row w-full gap-24 h-[543px]">
+      <div class="flex flex-col sm:flex-row w-full gap-8 sm:gap-24 min-h-[543px] px-2">
         <transition name="fade" mode="out-in">
           <div v-if="selectedType" :key="selectedType.label" class="w-full sm:w-1/2">
             <img
               :src="selectedType.img"
               alt="repair type image"
-              class="w-full h-full object-cover rounded-lg shadow-lg pointer-events-none"
+              class="w-full h-[543px] object-cover rounded-lg shadow-lg pointer-events-none"
             />
           </div>
         </transition>
 
         <transition name="fade" mode="out-in">
-          <div v-if="selectedType" :key="selectedType.label" class="w-full sm:w-1/2 min-h-max flex flex-col justify-between items-center">
+          <div v-if="selectedType" :key="selectedType.label" class="w-full sm:w-1/2 min-h-max flex flex-col gap-4 justify-between items-center">
             <div></div>
-            <p class="text-2xl text-black text-end">{{ selectedType.description }}</p>
+            <p class="text-xl sm:text-2xl text-black leading-8 sm:leading-11 text-justify sm:text-end">{{ selectedType.description }}</p>
             <MainButton class="w-full" big empty white>
               Оставить заявку
             </MainButton>
