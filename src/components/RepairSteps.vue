@@ -4,28 +4,40 @@ import MainButton from './MainButton.vue';
 
 const steps = [
   {
-    title: "Монтаж временного освещения и разметка",
-    description: "Установка временного освещения и разметка помещений для последующих работ."
+    title: "Возведение стен",
+    description: "Создание новых перегородок для зонирования помещений."
   },
   {
-    title: "Возведение стен и стяжка пола",
-    description: "Создание новых перегородок, выравнивание пола для дальнейших покрытий."
+    title: "Штукатурка",
+    description: "Выравнивание стен для последующей отделки."
   },
   {
-    title: "Штукатурка и прокладка коммуникаций",
-    description: "Выравнивание стен, прокладка электрики и сантехники."
+    title: "Сантехника и электрика",
+    description: "Прокладка труб и электрических кабелей, установка точек подключения."
   },
   {
-    title: "Малярные и отделочные работы",
-    description: "Покраска, укладка плитки, монтаж потолков из гипсокартона и ГКЛ."
+    title: "Стяжка пола",
+    description: "Выравнивание пола для подготовки к финальной отделке."
   },
   {
-    title: "Установка дверей и декоративных элементов",
-    description: "Монтаж дверей, плинтусов, молдингов и других декоративных элементов."
+    title: "ГКЛ",
+    description: "Монтаж листов ГКЛ для выравнивания поверхностей и создания конструкций."
   },
   {
-    title: "Чистовая отделка и клининг",
-    description: "Завершение работ, установка сантехники и электрики, уборка помещения."
+    title: "Плиточные работы",
+    description: "Укладка плитки на стены и полы."
+  },
+  {
+    title: "Малярные работы",
+    description: "Подготовка поверхностей и покраска стен и потолков."
+  },
+  {
+    title: "Напольные покрытия",
+    description: "Укладка ламината, паркета, линолеума и других покрытий."
+  },
+  {
+    title: "Чистовая сантехника и электрика",
+    description: "Установка розеток, выключателей, сантехники и окончательная настройка."
   }
 ];
 
@@ -35,7 +47,7 @@ const steps = [
     <section class="w-full bg-primary text-white py-20" id="repair-steps">
         <div class="container mx-auto flex flex-col w-full items-center px-2">
             <h2 class="text-center text-3xl font-bold">Этапы работ по ремонту:</h2>
-            <div class="grid grid-cols-1 grid-rows-6 sm:grid-cols-3 sm:grid-rows-2 gap-4 w-full gap-y-24 py-24">
+            <div class="grid grid-cols-1 grid-rows-9 sm:grid-cols-3 sm:grid-rows-3 gap-4 w-full gap-y-24 py-24">
                 <div v-for="(step, index) in steps" :key="index" class="flex flex-row gap-5 w-full items-start">
                     <span class="h-[60px] min-w-[60px] bg-white text-primary flex items-center justify-center text-xl font-bold">
                         {{ index + 1}}
