@@ -5,6 +5,8 @@ import About from "./components/About.vue";
 import Advantages from "./components/Advantages.vue";
 import RepairTypes from "./components/RepairTypes.vue";
 import RepairSteps from "./components/RepairSteps.vue";
+import Application from "./components/Application.vue";
+import FooterSection from "./components/FooterSection.vue";
 </script>
 
 <template>
@@ -15,6 +17,9 @@ import RepairSteps from "./components/RepairSteps.vue";
     <Advantages />
     <RepairTypes />
     <RepairSteps />
+    <Application />
+    <FooterSection />
+    <AppNav footer />
   </div>
 </template>
 

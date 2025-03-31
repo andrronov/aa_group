@@ -32,8 +32,8 @@ const steps = [
 
 <template>
     <section class="w-full bg-primary text-white py-20">
-        <div class="container mx-auto flex flex-col w-full items-center">
-            <h2 class="text-2xl sm:text-3xl font-bold">Этапы работ по ремонту:</h2>
+        <div class="container mx-auto flex flex-col w-full items-center px-2">
+            <h2 class="text-center text-3xl font-bold">Этапы работ по ремонту:</h2>
             <div class="grid grid-cols-1 grid-rows-6 sm:grid-cols-3 sm:grid-rows-2 gap-4 w-full gap-y-24 py-24">
                 <div v-for="(step, index) in steps" :key="index" class="flex flex-row gap-5 w-full items-start">
                     <span class="h-[60px] min-w-[60px] bg-white text-primary flex items-center justify-center text-xl font-bold">
