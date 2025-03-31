@@ -8,5 +8,5 @@ defineProps({
 </script>
 
 <template>
-    <img :src="black ? '/logo_black.svg' : '/logo.svg'" alt="logo" class="w-36 pointer-events-none">
+    <img :src="black ? 'logo_black.svg' : 'logo.svg'" alt="logo" class="w-36 pointer-events-none">
 </template>

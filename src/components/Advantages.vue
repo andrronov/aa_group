@@ -2,27 +2,27 @@
 const advantages = [
     {
         label: "Не выходим за рамки сметы",
-        icon: "/icons/money.svg"
+        icon: "icons/money.svg"
     },
     {
         label: "Гарантия на все 3 года работы",
-        icon: "/icons/guarantee.svg"
+        icon: "icons/guarantee.svg"
     },
     {
         label: "Официальный договор",
-        icon: "/icons/documents.svg"
+        icon: "icons/documents.svg"
     },
     {
         label: "Черновые материалы от 9т руб/м2",
-        icon: "/icons/shovel.svg"
+        icon: "icons/shovel.svg"
     },
     {
         label: "Опыт более 15 лет работы",
-        icon: "/icons/calendar.svg"
+        icon: "icons/calendar.svg"
     },
     {
         label: "Дизайн проекты и бесплатный замер",
-        icon: "/icons/accept.svg"
+        icon: "icons/accept.svg"
     },
 ]
 </script>

@@ -3,8 +3,8 @@ import Logo from "./Logo.vue";
 
 const ICON_LINKS = [
     "icons/phone.svg",
-    "/icons/mail.svg",
-    "/icons/wa.svg",
+    "icons/mail.svg",
+    "icons/wa.svg",
     "icons/tg.svg"
 ]
 </script>
