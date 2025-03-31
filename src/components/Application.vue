@@ -3,7 +3,7 @@ import MainButton from './MainButton.vue';
 </script>
 
 <template>
-  <section class="relative w-full bg-white h-[736px] flex flex-col items-center justify-center">
+  <section class="relative w-full bg-white h-[736px] flex flex-col items-center justify-center" id="application">
     <img src="/images/application.png" alt="application" class="absolute max-h-[736px] object-cover snap-center top-0 left-0 w-full h-full" />
     <form 
         class="flex flex-col items-center w-full py-10 px-8 max-w-[352px] bg-[#000000]/20 text-white z-100" 

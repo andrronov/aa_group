@@ -1,5 +1,6 @@
 <script setup>
 import MainButton from "./MainButton.vue";
+import { scrollIntoView } from "../composables/useScroll";
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import MainButton from "./MainButton.vue";
         <div class="bg-[#2E2E2E] opacity-65 max-w-[720px] text-center p-1">
             <p class="text-3xl sm:text-[46px] text-white bg-blend-difference line-clamp-6 font-bold">Ремонт, который превосходит ожидания</p>
         </div>
-        <MainButton class="z-100" big>
+        <MainButton class="z-100" big @click="scrollIntoView('application')">
             Оставить заявку
         </MainButton>
     </section>

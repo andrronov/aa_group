@@ -1,5 +1,6 @@
 <script setup>
 import { shallowRef } from "vue";
+import { scrollIntoView } from "../composables/useScroll";
 import MainButton from "./MainButton.vue";
 
 const types = [
@@ -15,7 +16,7 @@ const types = [
   },
   {
     label: "Ремонт офисов",
-    img: "/images/repair-type/apartment.png",
+    img: "/images/repair-type/ofice.jpg",
     description: "Сделаем офис, который работает на ваш успех. Мы выполняем полный спектр ремонтных работ: от перепланировки и отделки помещений до установки инженерных систем и освещения. Уделяем внимание каждой детали, сочетая стиль, функциональность и комфорт. Пространство, которое мотивирует и оставляет приятное впечатление у клиентов и сотрудников.",
   },
   {
@@ -34,7 +35,7 @@ const selectedType = shallowRef(types[0]);
 </script>
 
 <template>
-  <section class="w-full bg-white py-20">
+  <section class="w-full bg-white py-20" id="repair-types">
     <div class="container mx-auto w-full flex flex-col items-center">
       <h2 class="text-2xl sm:text-3xl text-black font-bold">Виды ремонта</h2>
       <ul class="flex items-center justify-between gap-2 w-full overflow-x-auto text-center my-12">
@@ -65,7 +66,7 @@ const selectedType = shallowRef(types[0]);
           <div v-if="selectedType" :key="selectedType.label" class="w-full sm:w-1/2 min-h-max flex flex-col gap-4 justify-between items-center">
             <div></div>
             <p class="text-xl sm:text-2xl text-black leading-8 sm:leading-11 text-justify sm:text-end">{{ selectedType.description }}</p>
-            <MainButton class="w-full" big empty white>
+            <MainButton @click="scrollIntoView('application')" class="w-full" big empty white>
               Оставить заявку
             </MainButton>
           </div>

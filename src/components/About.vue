@@ -1,5 +1,5 @@
 <template>
-  <section class="overflow-hidden bg-white py-12 sm:py-24">
+  <section class="overflow-hidden bg-white py-12 sm:py-24" id="about">
     <div class="mx-auto container px-6 lg:px-8">
       <div
         class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:grid-cols-2"
