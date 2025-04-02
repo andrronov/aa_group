@@ -38,6 +38,7 @@ const selectedType = shallowRef(types[0]);
   <section class="w-full bg-white py-20" id="repair-types">
     <div class="container mx-auto w-full flex flex-col items-center">
       <h2 class="text-2xl sm:text-3xl text-black font-bold">Виды ремонта</h2>
+      <p class="text-sm text-gray-600 sm:hidden">листайте влево, чтобы увидеть больше</p>
       <ul class="flex items-center justify-between gap-2 w-full overflow-x-auto text-center my-12">
         <li
           v-for="type in types"
