@@ -9,6 +9,7 @@ class Controller{
          return res.status(200).json(emailData)
       }
       catch(error){
+         console.log('ZALUPA', error)
          return res.status(401).json(error)
       }
    }

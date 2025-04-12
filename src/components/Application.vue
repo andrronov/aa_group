@@ -1,5 +1,19 @@
 <script setup>
 import MainButton from './MainButton.vue';
+
+const sendForm = async () => {
+    const res = await fetch("http://localhost:3003/" + 'api/application', {
+    method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify({
+        name: 'Test',
+        phone: '+7 999 999 99 99'
+      })
+  })
+  console.log(res.ok);
+}
 </script>
 
 <template>
@@ -38,7 +52,7 @@ import MainButton from './MainButton.vue';
                 pattern="^\+?[0-9\s\-]+$"
             />
         </div>
-        <MainButton @click.prevent="console.log()" class="w-1/2" aria-label="Отправить заявку">
+        <MainButton @click.prevent="sendForm()" class="w-1/2" aria-label="Отправить заявку">
             Отправить
         </MainButton>
     </form>

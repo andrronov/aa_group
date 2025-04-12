@@ -14,7 +14,7 @@ const ICON_LINKS = [
     <div class="container mx-auto py-12 flex flex-col items-center h-[350px]">
       <Logo black />
       <ul class="flex flex-col items-center gap-2 my-8">
-        <li>+7 (999) 999-99-99</li>
+        <li>+7 977-900-09-90</li>
         <li>pochta@gmail.com</li>
         <li>Г. Москва</li>
         <li>Время работы:</li>
