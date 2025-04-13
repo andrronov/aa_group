@@ -3,7 +3,7 @@ import bodyParser from 'body-parser'
 import router from './router.js'
 import cors from 'cors';
 
-const PORT = process.env.PORT || 3003
+const PORT = process.env.PORT || 3000
 
 const app = express()
 app.use(cors())
