@@ -15,10 +15,8 @@ const ICON_LINKS = [
       <Logo black />
       <ul class="flex flex-col items-center gap-2 my-8">
         <li>+7 977-900-09-90</li>
-        <li>pochta@gmail.com</li>
+        <li>AA.4ram@yandex.ru</li>
         <li>Г. Москва</li>
-        <li>Время работы:</li>
-        <li>с 09:00 до 18:00</li>
       </ul>
       <div class="flex items-center gap-2">
         <template v-for="link in ICON_LINKS" :key="link">

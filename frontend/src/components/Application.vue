@@ -1,18 +1,28 @@
 <script setup>
+import { ref } from 'vue';
 import MainButton from './MainButton.vue';
 
+const name = ref('');
+const phone = ref('');
+const isSuccess = ref(false);
+
 const sendForm = async () => {
-    const res = await fetch("http://localhost:3000/" + 'api/application', {
+    if(name.value.length < 1 && phone.value.length < 5){return;}
+
+    const res = await fetch('/api/application', {
     method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       },
       body: JSON.stringify({
-        name: 'Test',
-        phone: '+7 999 999 99 99'
+        name: name.value,
+        phone: phone.value
       })
   })
-  console.log(res.ok);
+   if(res.ok){
+	isSuccess.value = true;
+	setTimeout(() => {isSuccess.value = false}, 5000)	
+}
 }
 </script>
 
@@ -30,6 +40,7 @@ const sendForm = async () => {
         <div class="flex flex-col w-full mb-6">
             <label for="name" class="text-sm font-semibold mb-1.5">Имя</label>
             <input 
+		v-model="name"
                 type="text" 
                 id="name" 
                 name="name" 
@@ -42,6 +53,7 @@ const sendForm = async () => {
         <div class="flex flex-col w-full mb-[46px]">
             <label for="phone" class="text-sm font-semibold mb-1.5">Телефон</label>
             <input 
+		v-model="phone"
                 type="tel" 
                 id="phone" 
                 name="phone" 
@@ -55,6 +67,7 @@ const sendForm = async () => {
         <MainButton @click.prevent="sendForm()" class="w-1/2" aria-label="Отправить заявку">
             Отправить
         </MainButton>
+	<p v-if="isSuccess" class="text-green-500 font-medium text-xl">Успешно!</p>
     </form>
   </section>
 </template>

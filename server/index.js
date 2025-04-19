@@ -6,7 +6,10 @@ import cors from 'cors';
 const PORT = process.env.PORT || 3000
 
 const app = express()
-app.use(cors())
+app.use(cors({
+  origin: 'https://group-aa.ru',
+  credentials: false
+}));
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
