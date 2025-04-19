@@ -1,6 +1,7 @@
 <script setup>
 import AppNav from "./components/AppNav.vue";
 import Hero from "./components/Hero.vue";
+import HeroSlider from "./components/HeroSlider.vue";
 import About from "./components/About.vue";
 import Advantages from "./components/Advantages.vue";
 import RepairTypes from "./components/RepairTypes.vue";
