@@ -2,7 +2,9 @@
 import emblaCarouselVue from "embla-carousel-vue";
 import AutoPlay from "embla-carousel-autoplay";
 
-const [emblaRef] = emblaCarouselVue({loop: true}, [AutoPlay({ delay: 3500, stopOnInteraction: false })]);
+const [emblaRef] = emblaCarouselVue({ loop: true }, [
+  AutoPlay({ delay: 3500, stopOnInteraction: false }),
+]);
 
 const heroImages = [
   "/images/hero.jpg",
@@ -17,7 +19,7 @@ const heroImages = [
   <div class="embla" ref="emblaRef">
     <div class="embla__container">
       <div v-for="image in heroImages" :key="image" class="embla__slide">
-        <img :src="image" alt="">
+        <img :src="image" alt="" />
       </div>
     </div>
   </div>
@@ -28,7 +30,7 @@ const heroImages = [
   overflow: hidden;
 }
 .embla__container {
-    height: 100%;
+  height: 100%;
   display: flex;
 }
 .embla__slide {
@@ -37,8 +39,8 @@ const heroImages = [
   min-height: 100%;
 }
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 </style>

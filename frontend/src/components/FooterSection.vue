@@ -2,11 +2,15 @@
 import Logo from "./Logo.vue";
 
 const ICON_LINKS = [
-    "icons/phone.svg",
-    "icons/mail.svg",
-    "icons/wa.svg",
-    "icons/tg.svg"
-]
+  {
+    icon: "icons/phone.svg",
+    link: "tel:89779000990",
+  },
+  {
+    icon: "icons/tg.svg",
+    link: "https://t.me/AA_GROUP01",
+  },
+];
 </script>
 
 <template>
@@ -19,9 +23,9 @@ const ICON_LINKS = [
         <li>Г. Москва</li>
       </ul>
       <div class="flex items-center gap-2">
-        <template v-for="link in ICON_LINKS" :key="link">
-            <img :src="link" alt="icon link">
-        </template>
+        <a v-for="(link, index) in ICON_LINKS" :key="index" :href="link.link">
+          <img :src="link.icon" alt="icon link" />
+        </a>
       </div>
     </div>
   </section>
