@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://group-aa.ru/sitemap.xml
