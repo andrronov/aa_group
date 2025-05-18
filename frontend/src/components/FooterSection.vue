@@ -7,8 +7,12 @@ const ICON_LINKS = [
     link: "tel:89779000990",
   },
   {
+    icon: "icons/wa.svg",
+    link: "https://wa.me/79779000990",
+  },
+  {
     icon: "icons/tg.svg",
-    link: "https://t.me/AA_GROUP01",
+    link: "https://t.me/kap_remont_AAgroup",
   },
 ];
 </script>
